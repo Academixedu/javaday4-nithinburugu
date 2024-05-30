@@ -12,11 +12,13 @@ public class RepeatName {
         String name;
         System.out.println("Enter your name: ");
         name = ob.nextLine();
-        for (int i = 1; i <= 10; i++) {
+        System.out.println("How many times you want to repeat: ");
+        int n = ob.nextInt();
+        for (int i = 1; i <= n; i++) {
             System.out.println(name + " " + i);
         }
         int i = 1;
-        while (i <= 10) {
+        while (i <= n) {
             System.out.println(name + " " + i);
             i++;
         }
@@ -24,6 +26,6 @@ public class RepeatName {
         do {
             System.out.println(name + " " + cnt);
             cnt++;
-        } while (cnt <= 10);
+        } while (cnt <= n);
     }
 }
